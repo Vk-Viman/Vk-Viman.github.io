@@ -14,3 +14,21 @@ themeToggle?.addEventListener('click', () => {
 // Persist theme
 const saved = localStorage.getItem('theme');
 if(saved === 'light'){ document.body.classList.add('light'); }
+
+
+// First-visit theme chooser
+const modal = document.getElementById('themeModal');
+const btnDark = document.getElementById('chooseDark');
+const btnLight = document.getElementById('chooseLight');
+
+function applyTheme(theme){
+  if(theme === 'light'){ document.body.classList.add('light'); }
+  else { document.body.classList.remove('light'); }
+  localStorage.setItem('theme', theme);
+}
+
+if(modal && !localStorage.getItem('theme')){
+  modal.classList.remove('hidden');
+}
+btnDark?.addEventListener('click', () => { applyTheme('dark'); modal.classList.add('hidden'); });
+btnLight?.addEventListener('click', () => { applyTheme('light'); modal.classList.add('hidden'); });

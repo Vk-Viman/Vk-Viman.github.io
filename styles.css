@@ -62,3 +62,11 @@ h2{font-size:2rem;margin:0 0 1.2rem}
   --card:#ffffff;
   --border:#e6e6ef;
 }
+
+
+/* Modal */
+.modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.5);padding:1rem}
+.modal.hidden{display:none}
+.modal-card{background:var(--bg-elev);border:1px solid var(--border);border-radius:16px;padding:1.2rem;max-width:420px;width:100%;box-shadow:0 10px 40px rgba(0,0,0,.35)}
+.modal-card h3{margin:.2rem 0 .6rem}
+.modal-actions{display:flex;gap:.6rem;justify-content:flex-end;margin-top:1rem}
