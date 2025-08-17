@@ -15,7 +15,7 @@
     <div class="container header-inner">
       <a class="logo" href="#top">Viman Kavinda</a>
       <nav id="nav" class="nav">
-        <a href="#projects">Projects</a>
+        <a href="#individual-projects">Projects</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
@@ -26,12 +26,13 @@
   </header>
 
   <main id="top">
+    <!-- Hero -->
     <section class="hero container">
       <div class="hero-text">
         <h1>Hi, I'm <span class="accent">Viman Kavinda Edirisinghe</span>.</h1>
-        <p class="lead">IT undergraduate at SLIIT focused on building scalable, user‑centered software — combining engineering with business thinking.</p>
+        <p class="lead">IT undergraduate at SLIIT focused on building scalable, user-centered software — combining engineering with business thinking.</p>
         <div class="hero-cta">
-          <a class="btn primary" href="#projects">See my work</a>
+          <a class="btn primary" href="#individual-projects">See my work</a>
           <a class="btn" href="assets/Resume.pdf" download>Download résumé</a>
         </div>
         <div class="socials">
@@ -41,17 +42,19 @@
           <a href="tel:+94773754378">Call</a>
         </div>
       </div>
-      <img class="hero-img" src="assets/hero.jpg" alt="Portrait or illustration" />
+      <img class="hero-img" src="assets/hero.jpg" alt="Portrait of Viman Kavinda Edirisinghe" />
     </section>
 
+    <!-- Individual Projects -->
     <section id="individual-projects" class="container section">
       <h2>Individual Projects</h2>
       <div class="grid">
+        <!-- Portfolio Website -->
         <article class="card">
-          <img src="assets/hero.jpg" alt="Portfolio screenshot" />
+          <img src="assets/portfolio-screenshot.png" alt="Portfolio Website Screenshot" />
           <div class="card-body">
             <h3>My Portfolio Website</h3>
-            <p>Personal portfolio showcasing my skills, résumé, and academic projects. Built with HTML, CSS, and JavaScript. Fully responsive and deployed on GitHub Pages.</p>
+            <p>Personal portfolio showcasing skills, résumé, and academic projects. Built with semantic HTML, modern CSS, and a little JavaScript for theming and navigation. Fully responsive and deployed on GitHub Pages.</p>
             <div class="tags">
               <span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub Pages</span>
             </div>
@@ -61,17 +64,34 @@
             </div>
           </div>
         </article>
+
+        <!-- Advanced Weather App -->
+        <article class="card">
+          <img src="assets/weather-app.png" alt="Advanced Weather App Screenshot" />
+          <div class="card-body">
+            <h3>Advanced Weather App</h3>
+            <p>Responsive web app delivering real-time weather with search, geolocation, and a favorites list. Includes temperature conversion between °C, °F, and Kelvin, and polished UI interactions.</p>
+            <div class="tags">
+              <span>JavaScript</span><span>HTML</span><span>CSS</span><span>Weather API</span>
+            </div>
+            <div class="actions">
+              <a class="btn small" href="https://vk-viman.github.io/weather" target="_blank" rel="noreferrer">Live</a>
+              <a class="btn small" href="https://github.com/Vk-Viman/weather" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
 
-<section id="projects" class="container section">
+    <!-- Academic Projects -->
+    <section id="projects" class="container section">
       <h2>Academic Projects</h2>
       <div class="grid">
         <article class="card">
           <img src="assets/sample-project.png" alt="Service Management System screenshot" />
           <div class="card-body">
             <h3>Computer Accessories & CCTV Service Management System</h3>
-            <p>Designed and implemented an Order Management module for placing and tracking service/product orders with real‑time updates. Built dynamic React UI, RESTful APIs with Node/Express, and integrated MongoDB. Added Finance module for salaries, taxes, and real‑time summaries with Chart.js visualizations.</p>
+            <p>Designed and implemented an Order Management module for placing and tracking service/product orders with real-time updates. Built dynamic React UI, RESTful APIs with Node/Express, and integrated MongoDB. Added Finance module for salaries, taxes, and real-time summaries with Chart.js visualizations.</p>
             <div class="tags">
               <span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Figma</span><span>Chart.js</span>
             </div>
@@ -101,7 +121,7 @@
           <img src="assets/sample-project.png" alt="Employee Management System" />
           <div class="card-body">
             <h3>Online Employee Management System</h3>
-            <p>Built task assignment and payroll modules with role‑based access control using Java, JSP, and MySQL.</p>
+            <p>Built task assignment and payroll modules with role-based access control using Java, JSP, and MySQL.</p>
             <div class="tags">
               <span>Java</span><span>JSP</span><span>MySQL</span>
             </div>
@@ -114,9 +134,10 @@
       </div>
     </section>
 
+    <!-- About -->
     <section id="about" class="container section">
       <h2>About Me</h2>
-      <p>I’m an IT undergraduate at SLIIT with a commerce background, focused on developing scalable software solutions that solve real‑world problems. I love crafting efficient, user‑centered systems and clear UIs.</p>
+      <p>I’m an IT undergraduate at SLIIT with a commerce background, focused on developing scalable software solutions that solve real-world problems. I love crafting efficient, user-centered systems and clear UIs.</p>
       <ul class="stats">
         <li><strong>SLIIT</strong> — BSc (Hons) IT (Software Engineering), expected 2027</li>
         <li><strong>Languages</strong> — Sinhala, English</li>
@@ -124,24 +145,38 @@
       </ul>
     </section>
 
+    <!-- Skills (from résumé) -->
     <section id="skills" class="container section">
       <h2>Skills</h2>
       <div class="grid">
         <article class="card"><div class="card-body">
-          <h3>Programming</h3>
+          <h3>Programming Languages</h3>
           <p>C, C++, Java, JavaScript, Kotlin, Python</p>
         </div></article>
+
         <article class="card"><div class="card-body">
           <h3>Web & UI</h3>
-          <p>HTML5, CSS3, React.js, Figma; Adobe Photoshop, Illustrator, InDesign</p>
+          <p>HTML5, CSS3, React.js; Figma for UI/UX</p>
         </div></article>
+
         <article class="card"><div class="card-body">
-          <h3>Databases & Tools</h3>
-          <p>MySQL, MongoDB; VS Code, Eclipse</p>
+          <h3>Databases</h3>
+          <p>MySQL, MongoDB</p>
+        </div></article>
+
+        <article class="card"><div class="card-body">
+          <h3>Tools</h3>
+          <p>VS Code, Eclipse, Android Studio</p>
+        </div></article>
+
+        <article class="card"><div class="card-body">
+          <h3>Design</h3>
+          <p>Adobe Photoshop, Illustrator, InDesign</p>
         </div></article>
       </div>
     </section>
 
+    <!-- Contact (from résumé) -->
     <section id="contact" class="container section">
       <h2>Contact</h2>
       <p>Interested in collaborating or hiring? Reach me anytime:</p>
@@ -150,6 +185,7 @@
         <a class="btn" href="https://linkedin.com/in/viman-kavinda-22699534b" target="_blank" rel="noreferrer">LinkedIn</a>
         <a class="btn" href="tel:+94773754378">(+94) 77 375 4378</a>
       </div>
+      <p style="margin-top:.8rem;color:var(--muted)">Based in Wattala 11, Sri Lanka</p>
     </section>
   </main>
 
@@ -164,7 +200,6 @@
       </div>
     </div>
   </div>
-
 
   <footer class="site-footer">
     <div class="container">
