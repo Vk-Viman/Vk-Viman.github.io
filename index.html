@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Viman Kavinda Edirisinghe — Full Stack Developer & IT Student</title>
+  <meta name="description" content="Portfolio of Viman Kavinda Edirisinghe - IT undergraduate at SLIIT specializing in full-stack development, mobile apps, and scalable software solutions." />
+  <meta name="keywords" content="web developer, full stack, React, Node.js, portfolio, SLIIT, software engineer" />
+  <meta name="author" content="Viman Kavinda Edirisinghe" />
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Viman Kavinda Edirisinghe - Full Stack Developer" />
+  <meta property="og:description" content="IT undergraduate building scalable, user-centered software solutions" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/hero.jpg" />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loader-content">
+      <div class="loader-logo">VK</div>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+      <p class="loader-text">Loading Portfolio...</p>
+    </div>
+  </div>
+
+  <!-- Skip to main content for accessibility -->
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top">Viman Kavinda</a>
+      <nav id="nav" class="nav">
+        <a href="#individual-projects" data-section="individual-projects">Projects</a>
+        <a href="#about" data-section="about">About</a>
+        <a href="#skills" data-section="skills">Skills</a>
+        <a href="#contact" data-section="contact">Contact</a>
+      </nav>
+      <button id="menu" class="menu" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero -->
+    <section id="top" class="hero container">
+      <!-- Animated Background -->
+      <div class="hero-background">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+      </div>
+      
+      <div class="hero-text">
+        <div class="availability-badge">
+          <span>Available for Work</span>
+        </div>
+        <h1>Hi, I'm <span class="accent">Viman Kavinda Edirisinghe</span>.</h1>
+        <p class="lead">IT undergraduate at <strong>SLIIT</strong> focused on building <span class="highlight">scalable</span>, <span class="highlight">user-centered software</span> — combining engineering with business thinking.</p>
+        
+        <!-- Quick Stats -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number" id="projectCount">5</div>
+            <div class="stat-label">Projects</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" id="techCount">10</div>
+            <div class="stat-label">Technologies</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" id="skillCount">6</div>
+            <div class="stat-label">Skills</div>
+          </div>
+        </div>
+        
+        <div class="hero-cta">
+          <a class="btn primary" href="#individual-projects">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+              <line x1="12" y1="22.08" x2="12" y2="12"/>
+            </svg>
+            See my work
+          </a>
+          <a class="btn secondary" href="assets/Resume.pdf" download>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            Download CV
+          </a>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/Vk-Viman" target="_blank" rel="noreferrer" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            GitHub
+          </a>
+          <a href="https://linkedin.com/in/viman-kavinda-22699534b" target="_blank" rel="noreferrer" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+            LinkedIn
+          </a>
+          <a href="mailto:electrusgreen@gmail.com" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            Email
+          </a>
+          <a href="tel:+94773754378" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            Call
+          </a>
+        </div>
+      </div>
+      <div class="hero-img-wrapper">
+        <img class="hero-img" src="assets/hero.jpg" alt="Portrait of Viman Kavinda Edirisinghe" />
+        <div class="hero-img-decoration"></div>
+      </div>
+    </section>
+
+    <!-- Individual Projects -->
+    <section id="individual-projects" class="container section">
+      <h2><span class="gradient-text">Individual Projects</span><span class="project-count" id="projectCount">3</span></h2>
+      
+      <!-- Project Filter Buttons -->
+      <div class="filter-container">
+        <button class="filter-btn active" data-filter="all">
+          <span>All Projects</span>
+        </button>
+        <button class="filter-btn" data-filter="mobile">
+          <span>📱 Mobile</span>
+        </button>
+        <button class="filter-btn" data-filter="web">
+          <span>🌐 Web</span>
+        </button>
+        <button class="filter-btn" data-filter="featured">
+          <span>⭐ Featured</span>
+        </button>
+      </div>
+      
+      <div class="grid">
+        <!-- Med App - Featured -->
+        <article class="card project-highlight featured-card reveal" data-category="mobile featured">
+          <div class="featured-badge">⭐ Featured</div>
+          <img src="assets/med-app-placeholder.png" alt="Med App - Healthcare Mobile Application" onerror="this.src='assets/sample-project.png'" loading="lazy" class="lazy-img" />
+          <div class="card-body">
+            <h3>🏥 Med App — Healthcare Mobile Application</h3>
+            <p>A comprehensive healthcare mobile application built with React Native, Expo Go, and Firebase. Features include appointment scheduling, medical records management, real-time health tracking, patient-doctor communication, and an intuitive mobile-first design for seamless healthcare experience on the go.</p>
+            <div class="tags">
+              <span>React Native</span><span>Expo Go</span><span>Firebase</span><span>Mobile UI/UX</span><span>Healthcare</span>
+            </div>
+            <div class="actions">
+              <a class="btn small primary" href="https://github.com/Vk-Viman/med" target="_blank" rel="noreferrer">
+                <span class="btn-icon">�</span> View Code
+              </a>
+              <a class="btn small" href="https://github.com/Vk-Viman/med" target="_blank" rel="noreferrer">
+                <span class="btn-icon">�</span> GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Weather Dashboard -->
+        <article class="card project-highlight reveal" data-category="web">
+          <img src="assets/weather-app.png" alt="Weather Dashboard - Real-time Weather Data" onerror="this.src='assets/sample-project.png'" loading="lazy" class="lazy-img" />
+          <div class="card-body">
+            <h3>🌤️ Weather Dashboard</h3>
+            <p>An interactive weather dashboard providing real-time weather data, accurate forecasts, and beautiful visualizations. Features location-based weather updates, 7-day forecasts, dynamic weather animations, temperature conversion (°C/°F/K), and responsive design optimized for all devices.</p>
+            <div class="tags">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Weather API</span><span>Responsive</span>
+            </div>
+            <div class="actions">
+              <a class="btn small primary" href="https://vk-viman.github.io/weather/" target="_blank" rel="noreferrer">
+                <span class="btn-icon">🌐</span> Live Demo
+              </a>
+              <a class="btn small" href="https://github.com/Vk-Viman/weather" target="_blank" rel="noreferrer">
+                <span class="btn-icon">💻</span> Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Portfolio Website -->
+        <article class="card project-highlight reveal" data-category="web">
+          <img src="assets/portfolio-screenshot.png" alt="Portfolio Website - Modern Design" onerror="this.src='assets/sample-project.png'" loading="lazy" class="lazy-img" />
+          <div class="card-body">
+            <h3>💼 Portfolio Website</h3>
+            <p>A modern, responsive portfolio website showcasing projects, skills, and professional experience. Features smooth animations, clean design, interactive elements, theme switching (dark/light mode), optimized performance, and seamless user experience across all devices and screen sizes.</p>
+            <div class="tags">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive Design</span><span>GitHub Pages</span>
+            </div>
+            <div class="actions">
+              <a class="btn small primary" href="https://vk-viman.github.io/" target="_blank" rel="noreferrer">
+                <span class="btn-icon">🌐</span> Live Site
+              </a>
+              <a class="btn small" href="https://github.com/Vk-Viman/Vk-Viman.github.io" target="_blank" rel="noreferrer">
+                <span class="btn-icon">💻</span> Code
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Academic Projects -->
+    <section id="projects" class="container section">
+      <h2>Academic Projects</h2>
+      <div class="grid">
+        <article class="card academic-highlight reveal">
+          <img src="assets/sample-project.png" alt="Service Management System screenshot" loading="lazy" class="lazy-img" />
+          <div class="card-body">
+            <h3>🖥️ Computer Accessories & CCTV Service Management System</h3>
+            <p>Designed and implemented an Order Management module for placing and tracking service/product orders with real-time updates. Built dynamic React UI, RESTful APIs with Node/Express, and integrated MongoDB. Added Finance module for salaries, taxes, and real-time summaries with Chart.js visualizations.</p>
+            <div class="tags">
+              <span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Figma</span><span>Chart.js</span>
+            </div>
+            <div class="actions">
+              <a class="btn small primary" href="https://github.com/Vk-Viman/e-com" target="_blank" rel="noreferrer">
+                <span class="btn-icon">💻</span> View Code
+              </a>
+              <a class="btn small" href="https://github.com/Vk-Viman/e-com" target="_blank" rel="noreferrer">
+                <span class="btn-icon">🔗</span> GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card academic-highlight reveal">
+          <img src="assets/sample-project.png" alt="Employee Management System" loading="lazy" class="lazy-img" />
+          <div class="card-body">
+            <h3>👥 Online Employee Management System</h3>
+            <p>Built comprehensive task assignment and payroll modules with role-based access control using Java, JSP, and MySQL. Features include employee tracking, attendance management, performance reviews, and automated payroll calculations with secure authentication.</p>
+            <div class="tags">
+              <span>Java</span><span>JSP</span><span>MySQL</span><span>Authentication</span>
+            </div>
+            <div class="actions">
+              <a class="btn small" href="#" target="_blank" rel="noreferrer">
+                <span class="btn-icon">🌐</span> Demo
+              </a>
+              <a class="btn small" href="#" target="_blank" rel="noreferrer">
+                <span class="btn-icon">💻</span> Code
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="container section">
+      <h2>About Me</h2>
+      <p>I’m an IT undergraduate at SLIIT with a commerce background, focused on developing scalable software solutions that solve real-world problems. I love crafting efficient, user-centered systems and clear UIs.</p>
+      <ul class="stats">
+        <li><strong>SLIIT</strong> — BSc (Hons) IT (Software Engineering), expected 2027</li>
+        <li><strong>Languages</strong> — Sinhala, English</li>
+        <li><strong>Location</strong> — Wattala, Sri Lanka</li>
+      </ul>
+    </section>
+
+    <!-- Skills (from résumé) -->
+    <section id="skills" class="container section">
+      <h2><span class="gradient-text">Skills</span></h2>
+      <div class="grid">
+        <article class="card"><div class="card-body">
+          <h3>💻 Programming Languages</h3>
+          <p>C, C++, Java, JavaScript, Kotlin, Python</p>
+        </div></article>
+
+        <article class="card"><div class="card-body">
+          <h3>🌐 Web & Frontend</h3>
+          <p>HTML5, CSS3, React.js, Node.js; Figma for UI/UX</p>
+        </div></article>
+
+        <article class="card"><div class="card-body">
+          <h3>📱 Mobile Development</h3>
+          <p>React Native, Expo, Android Studio, Firebase Integration</p>
+        </div></article>
+
+        <article class="card"><div class="card-body">
+          <h3>🗄️ Databases</h3>
+          <p>MySQL, MongoDB, Firebase Firestore</p>
+        </div></article>
+
+        <article class="card"><div class="card-body">
+          <h3>🛠️ Tools & IDEs</h3>
+          <p>VS Code, Eclipse, Android Studio, Git, GitHub</p>
+        </div></article>
+
+        <article class="card"><div class="card-body">
+          <h3>🎨 Design</h3>
+          <p>Adobe Photoshop, Illustrator, InDesign, Figma</p>
+        </div></article>
+      </div>
+    </section>
+
+    <!-- Contact (from résumé) -->
+    <section id="contact" class="container section">
+      <h2>Get In Touch</h2>
+      <p class="contact-intro">Have a project in mind or want to collaborate? I'd love to hear from you!</p>
+      
+      <div class="contact-container">
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper">
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Your Name <span class="required">*</span></label>
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                required 
+                placeholder="John Doe"
+                aria-required="true"
+              />
+              <span class="error-message" id="nameError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address <span class="required">*</span></label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                required 
+                placeholder="john@example.com"
+                aria-required="true"
+              />
+              <span class="error-message" id="emailError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject <span class="required">*</span></label>
+              <input 
+                type="text" 
+                id="subject" 
+                name="subject" 
+                required 
+                placeholder="Project Inquiry"
+                aria-required="true"
+              />
+              <span class="error-message" id="subjectError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message <span class="required">*</span></label>
+              <textarea 
+                id="message" 
+                name="message" 
+                rows="6" 
+                required 
+                placeholder="Tell me about your project..."
+                aria-required="true"
+              ></textarea>
+              <span class="error-message" id="messageError"></span>
+            </div>
+
+            <button type="submit" class="btn primary submit-btn">
+              <span class="btn-text">Send Message</span>
+              <span class="btn-loader" style="display: none;">
+                <span class="loading-spinner"></span>
+              </span>
+            </button>
+            
+            <div class="form-status" id="formStatus"></div>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="contact-icon">📧</div>
+            <h3>Email</h3>
+            <a href="mailto:electrusgreen@gmail.com">electrusgreen@gmail.com</a>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">📱</div>
+            <h3>Phone</h3>
+            <a href="tel:+94773754378">(+94) 77 375 4378</a>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">💼</div>
+            <h3>LinkedIn</h3>
+            <a href="https://linkedin.com/in/viman-kavinda-22699534b" target="_blank" rel="noreferrer">Connect with me</a>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">📍</div>
+            <h3>Location</h3>
+            <p>Wattala 11, Sri Lanka</p>
+          </div>
+
+          <div class="social-links">
+            <a href="https://github.com/Vk-Viman" target="_blank" rel="noreferrer" aria-label="GitHub Profile" title="GitHub">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+            </a>
+            <a href="https://linkedin.com/in/viman-kavinda-22699534b" target="_blank" rel="noreferrer" aria-label="LinkedIn Profile" title="LinkedIn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+            <a href="mailto:electrusgreen@gmail.com" aria-label="Send Email" title="Email">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 class="footer-logo">Viman Kavinda</h3>
+          <p class="footer-tagline">Building the future, one line of code at a time.</p>
+          <div class="footer-socials">
+            <a href="https://github.com/Vk-Viman" target="_blank" rel="noreferrer" aria-label="GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+            </a>
+            <a href="https://linkedin.com/in/viman-kavinda-22699534b" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+            <a href="mailto:electrusgreen@gmail.com" aria-label="Email">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#individual-projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Get in Touch</h4>
+          <ul class="footer-contact">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              <a href="mailto:electrusgreen@gmail.com">electrusgreen@gmail.com</a>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <a href="tel:+94773754378">(+94) 77 375 4378</a>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span>Wattala 11, Sri Lanka</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Viman Kavinda Edirisinghe. All rights reserved.</p>
+        <p class="footer-credits">Designed & Built with <span class="heart">❤️</span> using React, Node.js & Passion</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
